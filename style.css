@@ -1,0 +1,167 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body
+{
+    font-family: sans-serif;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+.sidebar
+{
+    position: fixed;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: #042331;
+    transition: all .5s ease;
+
+}
+
+.sidebar header
+{
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    line-height: 70px;
+    background: #063146;
+    user-select: none;
+}
+
+header:hover
+{
+    font-size: 25.5px;
+}
+
+.sidebar ul a
+{
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 22px;
+    color: wheat;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgba(255,255,255,.1);
+    border-bottom: 1px solid black;
+    transition: .4s;
+}
+
+ul li:hover a
+{
+    padding-left: 40.5px;
+    font-size: 22.5px;
+}
+
+.sidebar ul a i
+{
+    margin-right: 16px;
+}
+
+#check
+{
+    display: none;
+}
+
+label #btn,label #cancel
+{
+    position: fixed;
+    cursor: pointer;
+    /* background: black; */
+    border-radius: 3px;
+}
+
+label #btn
+{
+    left: 40px;
+    top: 25px;
+    font-size: 35px;
+    color: whitesmoke;
+    padding: 6px 12px;
+    transition: all .5s;
+}
+
+label #cancel
+{
+    z-index: 1111;
+    left: -220px;
+    top: 10px;
+    font-size: 25px;
+    color: red;
+    transition: all .5s ease;
+}
+
+#check:checked ~ .sidebar
+{
+    left: 0;
+}
+
+#check:checked ~ label #btn
+{
+    left: 250px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#check:checked ~ label #cancel
+{
+    left: 220px;
+}
+
+#check:checked ~ section
+{
+    margin-left: 250px;
+}
+
+section
+{
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 1000vw;
+    transition: all .5s;
+}
+
+#home
+{
+    background-color: aqua; 
+
+}
+
+#about
+{
+    background-color: blueviolet;
+}
+
+#education
+{
+    background-color: chocolate;
+}
+
+#skills
+{
+    background-color: darkgreen;
+}
+
+#contact
+{
+    background-color: darkred;
+}
+
+h1
+{
+    font-size: 60px;
+    color: yellow;
+    margin-left: 600px;
+    padding-top: 250px;
+}
