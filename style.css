@@ -37,10 +37,7 @@ html
     user-select: none;
 }
 
-header:hover
-{
-    font-size: 25.5px;
-}
+
 
 .sidebar ul a
 {
@@ -61,7 +58,10 @@ ul li:hover a
 {
     padding-left: 40.5px;
     font-size: 22.5px;
+    color: salmon;
 }
+
+
 
 .sidebar ul a i
 {
@@ -91,14 +91,27 @@ label #btn
     transition: all .5s;
 }
 
+label #btn:hover
+{
+    font-size: 35px;
+    color: rgb(255, 255, 0);
+}
+
 label #cancel
 {
     z-index: 1111;
     left: -220px;
     top: 10px;
     font-size: 25px;
-    color: red;
+    color: #01090e;
     transition: all .5s ease;
+}
+
+label #cancel:hover
+{
+    font-size: 25px;
+    top: 5;
+    color: red;
 }
 
 #check:checked ~ .sidebar
@@ -120,7 +133,8 @@ label #cancel
 
 #check:checked ~ section
 {
-    margin-left: 250px;
+    margin-left: 150px;
+    width: 88vw;
 }
 
 section
@@ -128,40 +142,61 @@ section
     background-position: center;
     background-size: cover;
     height: 100vh;
-    width: 1000vw;
+    width: 99vw;
+    float: left;
     transition: all .5s;
+    
 }
 
 #home
 {
+    background-position-x: right;
     background-color: aqua; 
-
+    display: table;
+    background-attachment: fixed;
 }
 
 #about
 {
+    background-position-x: right;
     background-color: blueviolet;
+    display: table;
+    background-attachment: fixed;
 }
 
 #education
 {
+    background-position-x: right;
     background-color: chocolate;
+    display: table;
+    background-attachment: fixed;
 }
 
 #skills
 {
+    background-position-x: right;
     background-color: darkgreen;
+    display: table;
+    background-attachment: fixed;
 }
 
 #contact
 {
+    background-position-x: right;
     background-color: darkred;
+    display: table;
+    background-attachment: fixed;
+}
+
+#check:checked ~ h1
+{
+    margin-left: 250px;
 }
 
 h1
 {
     font-size: 60px;
     color: yellow;
-    margin-left: 600px;
+    margin-left: 500px;
     padding-top: 250px;
 }
